@@ -2,12 +2,17 @@ import React, { Component} from 'react';
 
  
 import Carousel from 'react-bootstrap/Carousel'
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
  
 
 export default class SliderUtama extends Component{
     render(){
         return (
+            <Container className="mt-4">
+            <Row>
+            <Col>
             <Carousel>
   <Carousel.Item>
     <img
@@ -34,6 +39,9 @@ export default class SliderUtama extends Component{
   </Carousel.Item>
   
 </Carousel>
+</Col>
+</Row>
+</Container> 
         );
     }
 }

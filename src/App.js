@@ -3,11 +3,14 @@ import {Switch,Route} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import NavbarUtama from "./components/NavbarUtama"
+import Footer from "./components/Footer"
+
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Default from "./pages/Default"
 import Contact from "./pages/Contact"
-import NavbarUtama from "./components/NavbarUtama"
+import Login from "./pages/Login"
 
 class App extends Component{
   render(){
@@ -18,8 +21,10 @@ class App extends Component{
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/login" component={Login} />
           <Route component={Default} />
         </Switch> 
+        <Footer />
       </React.Fragment>
     );
   }
