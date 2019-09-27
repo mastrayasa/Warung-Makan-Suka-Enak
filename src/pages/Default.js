@@ -16,7 +16,7 @@ export default class Default extends Component{
             <Container> 
  
               <Row className="pt-1">
-                <Col lg md xs md2 className="text-center pt-5"> 
+                <Col lg md xs className="text-center pt-5"> 
                     <h1>Error 404</h1>
                     <p className="text-muted">Halaman yg anda cari tidak ditemukan</p>
                 </Col>

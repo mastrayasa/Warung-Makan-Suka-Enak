@@ -6,8 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-
-import SliderUtama from "../components/SliderUtama"
+ 
 
 export default class Login extends Component{
     render(){
@@ -18,7 +17,7 @@ export default class Login extends Component{
             <Container> 
  
               <Row className="pt-1">
-                <Col md={{ span: 4, offset: 4 }} xs md2 className="pt-5"> 
+                <Col md={{ span: 4, offset: 4 }} xs className="pt-5"> 
                      
                     
                     <Card>

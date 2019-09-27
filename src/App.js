@@ -11,6 +11,7 @@ import About from "./pages/About"
 import Default from "./pages/Default"
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
+import Product from "./pages/Product"
 
 class App extends Component{
   render(){
@@ -22,6 +23,7 @@ class App extends Component{
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
+          <Route path="/product" component={Product} />
           <Route component={Default} />
         </Switch> 
         <Footer />

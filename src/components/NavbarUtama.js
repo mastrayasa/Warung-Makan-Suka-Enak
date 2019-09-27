@@ -6,9 +6,7 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import NavDropdown from 'react-bootstrap/NavDropdown' 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container' 
 export default class NavbarUtama extends Component{
     render(){
         return (
@@ -24,10 +22,12 @@ export default class NavbarUtama extends Component{
                     <Nav.Link href="/about">Tentang</Nav.Link>
                     <Nav.Link href="/contact">Kontak</Nav.Link>
                     <NavDropdown title="Produk" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/product">Semua Produk</NavDropdown.Item>
+                        <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.1">Nasi Padang</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Nasi Ayam</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Nasi Uduk</NavDropdown.Item>
-                        <NavDropdown.Divider />
+                        <NavDropdown.Divider /> 
                         <NavDropdown.Item href="#action/3.4">Ikan Bakar</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.4">Ayam Geprek</NavDropdown.Item>
                     </NavDropdown>

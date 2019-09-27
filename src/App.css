@@ -25,3 +25,13 @@
     font-size: 1.25rem;
     font-weight: 300;
 }
+ 
+.text-white {
+  color: #fff !important;
+}
+.bg-gradient-default {
+  background: linear-gradient(87deg,#172b4d,#1a174d) !important;
+}
+.bg-gradient-warning {
+  background: linear-gradient(87deg,#fb6340,#fbb140) !important;
+}

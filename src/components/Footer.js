@@ -15,17 +15,17 @@ export default class Footer extends Component{
 
             <Container>  
               <Row>
-                <Col lg md xs md2 className="pt-5 pb-5"> 
+                <Col lg md xs className="pt-5 pb-5"> 
                     <h3>Tentang Kami</h3>
                     <p className="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero</p>
                 </Col>
 
-               	<Col lg md xs md2 className="pt-5"> 
+               	<Col lg md xs md className="pt-5"> 
                     <h3>Murah</h3>
                     <p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </Col>
 
-                <Col lg md xs md2 className="pt-5"> 
+                <Col lg md xs md className="pt-5"> 
                  
                     <h3>Murah</h3>
                     <p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
