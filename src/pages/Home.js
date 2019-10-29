@@ -1,5 +1,5 @@
 import React, { Component} from 'react'; 
-
+import logo from "../img/person/team-1.jpg"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,12 +10,15 @@ import Alert from 'react-bootstrap/Alert'
 
 import SliderUtama from "../components/SliderUtama"
 import Album from "../components/Album"
-
+import TeamItem from "../components/TeamItem"
 
 export default class Home extends Component{
     render(){
         return (
           <div>
+
+<img src="{logo}" alt="Lazy Load Example" />
+
             <SliderUtama />
 
             <Container> 
@@ -115,8 +118,9 @@ export default class Home extends Component{
 
 
                     <Row className="pt-1 justify-content-md-center">
+                        <TeamItem name="John Doe" job="Founder and CEO"/>
                         <Col className="text-center pt-5"> 
-                            <Image className="mb-3 rounded-circle img-center img-fluid shadow shadow-lg--hover" src="./img/person/team-1.jpg" width="180" />
+                            <Image className="mb-3 rounded-circle img-center img-fluid shadow shadow-lg--hover" src="img/person/team-1.jpg" width="180" />
                             <h5 class="cover-heading">John Doe</h5>
                             <p className="text-muted">Founder and CEO</p> 
                         </Col>

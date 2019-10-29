@@ -3,15 +3,39 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image' 
-import { storeProducts } from "../data"
+//import { storeProducts } from "../data"
 import {ProductConcumer} from '../context';
-import ProductItem from '../components/ProductItem'
+import ProductItem from '../components/ProductItem' 
+
 export default class Product extends Component{
 
     state = {
-        products: storeProducts
+        //products: storeProducts
+        images:["aaaa"]
     }
 
+    /*<ProductConcumer>
+                    {value => {
+                        return value.products.map( product => {
+                            return <ProductItem key={product.id} product={product} />
+                        })
+                    }}
+                </ProductConcumer> */
+
+    componentDidMount(){
+        fetch("http://localhost/martkita/api/appslider")
+        .then(results => {
+            return results.json();
+        }).then( data => {
+            let img = data.results.map( (pic) => {
+                return (
+                    <Image className="mb-3 rounded-circle img-center img-fluid shadow shadow-lg--hover" src={pic.url} width="180" />
+                )
+            });
+            this.setState({images: img});
+            console.log(data)
+        });
+    }
     
     render(){
 
@@ -28,13 +52,7 @@ export default class Product extends Component{
               </Row> 
 
               <Row className="pt-1"> 
-                <ProductConcumer>
-                    {value => {
-                        return value.products.map( product => {
-                            return <ProductItem key={product.id} product={product} />
-                        })
-                    }}
-                </ProductConcumer> 
+                {this.state.images}
               </Row> 
             </Container>
           </React.Fragment> 

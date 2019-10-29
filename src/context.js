@@ -1,10 +1,10 @@
 import React, {Component } from 'react'
-import {storeProducts} from './data'
+//import {storeProducts} from './data'
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component{
     state = {
-        products:storeProducts
+       // products:storeProducts
     }
     addToCart = () => {
         console.log("add to cart")
